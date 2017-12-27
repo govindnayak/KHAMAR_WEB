@@ -1,0 +1,45 @@
+<div class="topnav">
+
+  <img style="margin-left: 40px; margin-top: 5px" src="images/1.png" height="60px" width="60px">
+  <a href="#/login" onclick="document.getElementById('01').style.display='block'"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<font color="#3399FF">LOGIN</font></a>
+  <a style="margin-right: 750px; position: absolute" href="#/login">&nbsp;&nbsp;&nbsp;LOGO XYZ INC.</a>
+
+</div>
+
+<div id="triangle-topleft"></div>
+
+<h1 style="padding-left: 300px; color: #404040; margin-top: -10%; font-size: 40px">Namaste! Welcome to the XYZ Forms</h1><br>
+<h2 style="padding-left: 300px; color: #404040;"><font face="Arial">An all new place for form submissions and editions</font></h2><br><br>
+<h3 style="padding-left: 300px; color: #404040;">Description about the website here...</h3>
+
+<div id="01" class="modal">
+
+      <form class="formarea" method="post" ng-submit="login()"><br><br>
+      <div class="container">
+
+        <h2><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;User Login</h2></br>
+        <label style="font-family: sans-serif"><b>Username</b></label><br><br>
+        <input type="text" name="username" ng-model="username" required><br><br>
+
+        <br><label style="font-family: sans-serif"><b>Password</b></label><br><br>
+        <input type="password" name="password" ng-model="password" required><br><br>
+
+        <div class="form-actions">
+            <button type="submit" class="mybutton">LOG IN</button>
+        </div><br>
+        <!--<div class="clearfix">
+        <a onclick="document.getElementById('01').style.display='none'">x</a>
+      </div>-->
+
+      </div>
+      </form>
+</div>
+
+<script>
+var modal = document.getElementById('01');
+window.onclick = function(event) {
+  if (event.target == modal) {
+      modal.style.display = "none";
+  }
+}
+</script>

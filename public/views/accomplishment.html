@@ -1,0 +1,56 @@
+<div class="topnav">
+
+  <img style="margin-left: 40px; margin-top: 5px" src="images/1.png" height="60px" width="60px">
+  <a href="#/login" onclick="document.getElementById('01').style.display='block'"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<font color="#3399FF">{{Username}}</font></a>
+  <a style="margin-right: 650px; position: absolute" href="#/dashboard">&nbsp;&nbsp;&nbsp;LOGO XYZ INC.</a>
+
+</div>
+
+<div class="sidemenu">
+  <div class="dashboard">
+    <a href="#/dashboard"><img src="images/dashboard.png" width="80px" height="80px"></a>
+    <p>&nbsp;&nbsp;Dashboard</p>
+  </div>
+  <br><br>
+  <div class="topperform">
+    <a href="#/topperform"><img src="images/top.png" width="80px" height="80px"></a>
+    <p>&nbsp;Top Performer's</p>
+  </div>
+  <br><br>
+  <div class="accomplishment">
+    <a href="#/accomplishment"><img src="images/accom.png" width="80px" height="80px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></a>
+    <p>Accomplishment</p>
+  </div>
+</div>
+<style>
+img{
+  vertical-align: middle;
+}
+</style>
+
+  <form class="formarea" method="post">
+
+  <div class="container" style="width: 60%">
+  <h3><i class="fa fa-check-square-o"  aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Add Accomplishment</h3><br>
+
+  <label style="font-family: sans-serif"><b>Title</b></label>&nbsp;&nbsp;
+  <input style="width: 60%" type="text" name="title" ng-model="title" required><br><br><br>
+
+  <label style="font-family: sans-serif"><b>Type</b></label>&nbsp;&nbsp;
+  <select style="width: 80px; height: 30px">
+  <option value="list">List</option>
+</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+
+  <label style="font-family: sans-serif"><b>Date</b></label>&nbsp;&nbsp;
+  <input style="width: 30%; height: 30px" type="date" name="date" ng-model="date" required><br><br><br>
+
+  <label style="font-family: sans-serif"><b>URL</b></label>&nbsp;&nbsp;
+  <input style="width: 60%" type="text" name="url" ng-model="url" required><br><br><br>
+
+  <label style="font-family: sans-serif"><b>Description</b></label><br><br>
+  <textarea style="width: 70%; height: 50px" name="description" ng-model="description"></textarea><br><br>
+
+  <button type="submit" class="mybutton">CREATE</button>
+  </div>
+
+  </form>
